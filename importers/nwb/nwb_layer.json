@@ -1,0 +1,24 @@
+{
+  "name": "nwb",
+  "owner": "citysdk",
+  "title": "Wegenbestand",
+  "description": "Road segments from the Dutch administrative database of traffic information.",
+  "data_sources": [
+    "http://geodata.nationaalgeoregister.nl"
+  ],
+  "category": "mobility",
+  "subcategory": "roads",
+  "rdf_type": "dbp:Road",
+  "licence": "CC0",
+  "fields": [
+    {
+      "description": "Unique number of road segment",
+      "name": "wegvak_id",
+      "type": "xsd:string",
+      "equivalent_property": "rdfs:label",
+      "unit": "cdk:unitNone"
+      }
+  ],
+  "context": {
+  }
+}

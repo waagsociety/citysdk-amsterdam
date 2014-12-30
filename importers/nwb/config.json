@@ -1,0 +1,15 @@
+{
+  "endpoint": {
+    "url": "0.0.0.0:9292",
+  },
+  "owner": {
+    "name": "citysdk",
+    "password": "ChangeMeNow"
+  },
+  "db": {
+    "host": "127.0.0.1",
+    "database": "ndw",
+    "user": "tom",
+    "password": ""
+  }
+}
