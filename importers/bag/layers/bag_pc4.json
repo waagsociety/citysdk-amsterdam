@@ -1,0 +1,6 @@
+{
+  "title": "BAG - PC4 centroids",
+  "description": "Centroid of locations of all addresses that share the first 4 postcode characters",
+  "subcategory": "postcodes",
+  "rdf_type": "cdk:PC4Centroid"
+}

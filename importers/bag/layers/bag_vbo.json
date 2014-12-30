@@ -1,0 +1,6 @@
+{
+  "title": "BAG - Verblijfsobjecten",
+  "description": "Addresses",
+  "subcategory": "addresses",
+  "rdf_type": "bag:Verblijfsobject"
+}

@@ -1,0 +1,14 @@
+{
+  "owner": "citysdk",
+  "data_sources": [
+    "https://www.pdok.nl",
+    "http://geodata.nationaalgeoregister.nl/inspireadressen/atom/inspireadressen.xml",
+    "http://nlextract.readthedocs.org/en/latest/bagextract.html",
+    "https://github.com/waagsociety/citysdk-amsterdam/tree/master/importers/bag"
+  ],
+  "category": "administrative",
+  "rdf_prefixes": {
+    "bag": "http://lod.geodan.nl/vocab/bag#"
+  },
+  "licence": "CC0"
+}

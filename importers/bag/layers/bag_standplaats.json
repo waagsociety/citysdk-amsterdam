@@ -1,0 +1,6 @@
+{
+  "title": "BAG - Standplaatsen",
+  "description": "Houseboat locations and addresses",
+  "subcategory": "buildings",
+  "rdf_type": "bag:Standplaats"
+}

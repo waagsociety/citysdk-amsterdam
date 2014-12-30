@@ -1,0 +1,6 @@
+{
+  "host": "localhost",
+  "database": "bag",
+  "user": "postgres",
+  "password": "postgres"
+}
