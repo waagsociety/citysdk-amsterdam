@@ -2,8 +2,7 @@
 
 require 'json'
 require 'sequel'
-require '../../../citysdk-rubygem/lib/citysdk.rb'
-#require 'citysdk'
+require 'citysdk'
 include CitySDK
 
 # ============================ Get endpoint and owner credentials ============================
