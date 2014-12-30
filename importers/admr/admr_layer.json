@@ -1,0 +1,52 @@
+{
+  "name": "admr",
+  "owner": "citysdk",
+  "title": "Administrative Regions",
+  "description": "Dutch administrative regions as used by Statistics Netherlands",
+  "data_sources": [
+    "https://www.pdok.nl",
+    "http://www.cbs.nl/nl-NL/menu/themas/dossiers/nederland-regionaal/links/2013-buurtkaart-shape-versie-1-el.htm"
+  ],
+  "category": "administrative",
+  "subcategory": "regions",
+  "rdf_type": "cdk:AdminRegion",
+  "licence": "CC0",
+  "fields": [
+    {
+      "description": "Level of the administrative region: 0 = country, 1 = state/province, 2 = region, 3 = municipality, 4 = district, 5 = neighbourhood, 6 = subneighbourhood",
+      "name": "admn_level",
+      "type": "xsd:integer",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Jurisdiction ID, as used by the administrative authorities",
+      "lang": "@en",
+      "name": "code",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Municipality name",
+      "lang": "@en",
+      "name": "gemeentena",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Province name",
+      "lang": "@en",
+      "name": "provincien",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Country name",
+      "lang": "@en",
+      "name": "landsnaam",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    }
+  ],
+  "context": {
+  }
+}
