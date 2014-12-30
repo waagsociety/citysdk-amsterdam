@@ -37,11 +37,13 @@ DECLARE
   _nummer_letter_toevoeging text;
 BEGIN
   _nummer_letter_toevoeging := '' || nummer;
+
   IF letter IS NOT NULL THEN
     _nummer_letter_toevoeging := _nummer_letter_toevoeging || letter;
-    IF toevoeging IS NOT NULL THEN
-      _nummer_letter_toevoeging := _nummer_letter_toevoeging || toevoeging;
-    END IF;
+  END IF;
+
+  IF toevoeging IS NOT NULL THEN
+    _nummer_letter_toevoeging := _nummer_letter_toevoeging || toevoeging;
   END IF;
   RETURN lower(_nummer_letter_toevoeging);
 END $$ LANGUAGE plpgsql IMMUTABLE;
