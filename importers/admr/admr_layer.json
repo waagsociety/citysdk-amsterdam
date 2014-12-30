@@ -1,6 +1,5 @@
 {
   "name": "admr",
-  "owner": "citysdk",
   "title": "Administrative Regions",
   "description": "Dutch administrative regions as used by Statistics Netherlands",
   "data_sources": [
