@@ -43,8 +43,8 @@ tables = [
 db_config = JSON.parse(File.read("#{File.dirname(__FILE__)}/config.json"), symbolize_names: true)
 database = Sequel.connect "postgres://#{db_config[:user]}:#{db_config[:password]}@#{db_config[:host]}/#{db_config[:database]}", encoding: 'UTF-8'
 database.extension :pg_hstore
-database.extension :pg_streaming
-database.stream_all_queries = true
+# database.extension :pg_streaming
+# database.stream_all_queries = true
 
 # ==================================== Connect to API ======================================
 
@@ -79,15 +79,12 @@ tables.each do |table|
   dataset = dataset.select{columns}.select_append(Sequel.function(:ST_AsGeoJSON, :geom).as(:geojson))
 
   count = 0
-  dataset.stream.all do |row|
+  dataset.use_cursor.each do |row|
     geometry = JSON.parse(row[:geojson])
     row.delete(:geojson)
 
     # All tables have ID column, except postcode tables: use first column instead
-    # For addresses (vbo, verblijfsobject), use unique postcode + huisnummer
-    id = if table == :vbo
-      row[:postcode_huisnummer]
-    elsif row.has_key? :id
+    id = if row.has_key? :id
       row[:id]
     else
       row[columns.first]
