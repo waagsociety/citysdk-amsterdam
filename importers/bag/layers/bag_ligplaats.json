@@ -4,6 +4,7 @@
   "subcategory": "buildings",
   "rdf_type": "bag:Ligplaats",
   "context": {
+    "bag": "http://lod.geodan.nl/vocab/bag#",
     "id": "bag:identificatie",
     "status": "bag:plaatsstatus",
     "straat": "bag:openbareruimtenaam",

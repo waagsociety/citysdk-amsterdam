@@ -6,8 +6,5 @@
     "https://github.com/waagsociety/citysdk-amsterdam/tree/master/importers/bag"
   ],
   "category": "administrative",
-  "rdf_prefixes": {
-    "bag": "http://lod.geodan.nl/vocab/bag#"
-  },
   "licence": "CC0"
 }

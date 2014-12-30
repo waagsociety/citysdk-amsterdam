@@ -4,6 +4,7 @@
   "subcategory": "buildings",
   "rdf_type": "bag:Pand",
   "context": {
+    "bag": "http://lod.geodan.nl/vocab/bag#",
     "id": "bag:identificatie",
     "bouwjaar": "bag:bouwjaar",
     "status": "bag:pandstatus"

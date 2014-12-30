@@ -4,6 +4,7 @@
   "subcategory": "addresses",
   "rdf_type": "bag:Verblijfsobject",
   "context": {
+    "bag": "http://lod.geodan.nl/vocab/bag#",
     "id": "bag:identificatie",
     "status": "bag:verblijfsobjectstatus",
     "gebruiksdoel": "bag:gebruiksdoel",
