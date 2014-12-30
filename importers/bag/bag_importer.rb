@@ -84,7 +84,10 @@ tables.each do |table|
     row.delete(:geojson)
 
     # All tables have ID column, except postcode tables: use first column instead
-    id = if row.has_key? :id
+    # For addresses (vbo, verblijfsobject), use unique postcode + huisnummer
+    id = if table == :vbo
+      row[:postcode_huisnummer]
+    elsif row.has_key? :id
       row[:id]
     else
       row[columns.first]

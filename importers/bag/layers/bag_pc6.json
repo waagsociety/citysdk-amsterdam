@@ -2,5 +2,8 @@
   "title": "BAG - PC6 centroids",
   "description": "Centroid of locations of all addresses that share same postcode",
   "subcategory": "postcodes",
-  "rdf_type": "cdk:PC6Centroid"
+  "rdf_type": "dbpedia:Location",
+  "context": {
+    "pc6": "rdfs:label"
+  }
 }

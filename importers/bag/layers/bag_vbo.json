@@ -2,5 +2,24 @@
   "title": "BAG - Verblijfsobjecten",
   "description": "Addresses",
   "subcategory": "addresses",
-  "rdf_type": "bag:Verblijfsobject"
+  "rdf_type": "bag:Verblijfsobject",
+  "context": {
+    "id": "bag:identificatie",
+    "status": "bag:verblijfsobjectstatus",
+    "gebruiksdoel": "bag:gebruiksdoel",
+    "oppervlakte": "bag:oppervlakte",
+    "straat": "bag:openbareruimtenaam",
+    "huisnummer": "bag:huisnummer",
+    "huisletter": "bag:huisletter",
+    "toevoeging": "bag:huisnummertoevoeging",
+    "postcode": "bag:postcode",
+    "postcode_huisnummer": "rdfs:label",
+    "woonplaats": "bag:woonplaatsnaam"
+  }
 }
+
+
+
+
+
+

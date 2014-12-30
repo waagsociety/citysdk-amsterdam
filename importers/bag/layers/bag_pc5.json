@@ -2,5 +2,8 @@
   "title": "BAG - PC5 centroids",
   "description": "Centroid of locations of all addresses that share the first 5 postcode characters",
   "subcategory": "postcodes",
-  "rdf_type": "cdk:PC5Centroid"
+  "rdf_type": "dbpedia:Location",
+  "context": {
+    "pc5": "rdfs:label"
+  }
 }

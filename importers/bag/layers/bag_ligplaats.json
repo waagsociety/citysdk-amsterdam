@@ -1,6 +1,17 @@
 {
   "title": "BAG - Ligplaatsen",
-  "description": "Houseboat locations and addresses",
+  "description": "Houseboats - locations and addresses",
   "subcategory": "buildings",
-  "rdf_type": "bag:Ligplaats"
+  "rdf_type": "bag:Ligplaats",
+  "context": {
+    "id": "bag:identificatie",
+    "status": "bag:plaatsstatus",
+    "straat": "bag:openbareruimtenaam",
+    "huisnummer": "bag:huisnummer",
+    "huisletter": "bag:huisletter",
+    "toevoeging": "bag:huisnummertoevoeging",
+    "postcode": "bag:postcode",
+    "postcode_huisnummer": "rdfs:label",
+    "woonplaats": "bag:woonplaatsnaam"
+  }
 }

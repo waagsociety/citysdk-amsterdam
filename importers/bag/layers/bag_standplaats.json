@@ -1,6 +1,17 @@
 {
   "title": "BAG - Standplaatsen",
-  "description": "Houseboat locations and addresses",
+  "description": "Semi-permanent caravan sites - locations and addresses",
   "subcategory": "buildings",
-  "rdf_type": "bag:Standplaats"
+  "rdf_type": "bag:Standplaats",
+  "context": {
+    "id": "bag:identificatie",
+    "status": "bag:plaatsstatus",
+    "straat": "bag:openbareruimtenaam",
+    "huisnummer": "bag:huisnummer",
+    "huisletter": "bag:huisletter",
+    "toevoeging": "bag:huisnummertoevoeging",
+    "postcode": "bag:postcode",
+    "postcode_huisnummer": "rdfs:label",
+    "woonplaats": "bag:woonplaatsnaam"
+  }
 }

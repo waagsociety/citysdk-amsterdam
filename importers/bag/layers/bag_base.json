@@ -1,5 +1,4 @@
 {
-  "owner": "citysdk",
   "data_sources": [
     "https://www.pdok.nl",
     "http://geodata.nationaalgeoregister.nl/inspireadressen/atom/inspireadressen.xml",
