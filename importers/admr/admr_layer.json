@@ -20,21 +20,49 @@
     {
       "description": "Jurisdiction ID, as used by the administrative authorities",
       "lang": "@en",
-      "name": "code",
+      "name": "gemeente_code",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "District code, as used by the central bureau of statistics",
+      "lang": "@en",
+      "name": "wijk_code",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Neighbourhood code, as used by the central bureau of statistics",
+      "lang": "@en",
+      "name": "buurt_code",
       "type": "rdfs:label",
       "unit": "cdk:unitNone"
     },
     {
       "description": "Municipality name",
       "lang": "@en",
-      "name": "gemeentena",
+      "name": "gemeentenaam",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "District name",
+      "lang": "@en",
+      "name": "wijknaam",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Neighbourhood name",
+      "lang": "@en",
+      "name": "buurtnaam",
       "type": "rdfs:label",
       "unit": "cdk:unitNone"
     },
     {
       "description": "Province name",
       "lang": "@en",
-      "name": "provincien",
+      "name": "provincienaam",
       "type": "rdfs:label",
       "unit": "cdk:unitNone"
     },

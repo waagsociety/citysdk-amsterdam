@@ -44,15 +44,18 @@ $stderr.puts ("Deleting layer 'admr' and objects, if layer already exists...")
 begin
   $api.delete('/layers/admr')
 rescue CitySDK::HostException => e
+  
 end
 $stderr.puts ("Creating layer 'admr'")
 $api.post("/layers", $admr_layer)
+
+$api.batch_size = 25
 
 # ==================================== Municipalities ====================================
 
 $stderr.puts ('Importing municipalities')
 params = {
-  file_path: 'gemeenten.zip',
+  file_path: 'gemeente.zip',
   title: 'gemeentenaam',
   host: config[:endpoint][:url],
   layer: 'admr',
@@ -64,20 +67,102 @@ params = {
 
 imp = Importer.new(params)
 
-# we can change the name of the individual fields
-params[:alternate_fields][:gemeentena] = 'gemeentenaam'
+# for this layer (admr) we are not interested in most of the demographic fields.
+# so we empty the 'fields' array except for the fields we're interested in.
+params[:fields] = [:GM_NAAM, :GM_CODE]
 
-# we can also remove fields that we are not interested in importing
-params[:alternate_fields][:gid] = nil
+# we can change the name of the individual fields
+params[:alternate_fields][:GM_NAAM] = 'gemeentenaam'
+params[:alternate_fields][:GM_CODE] = 'gemeente_code'
+
 
 # you can adjust each individual data frame
 # this hash (object_datum) has a :data hash, an :id and a :title
 # below we change the :id (layername + :id will be the cdk_id)
 # we also add an extra data field (:admn_level)
 imp.do_import do |object_datum|
-  object_datum[:id] = 'nl.' + object_datum[:data]['gemeentenaam'].downcase
+  if object_datum[:data]['gemeentenaam'].blank?
+    object_datum[:id] = 'nl.' + object_datum[:data]['gemeente_code']
+  else
+    object_datum[:id] = 'nl.' + object_datum[:data]['gemeentenaam']
+  end
   object_datum[:data][:admn_level] = 3
+  
+  # set object_datum[:data] to nil if you do not want to import this record
+  object_datum[:data] = nil if object_datum[:id] == 'nl.'
 end
+
+
+
+# ==================================== Districts ====================================
+
+$stderr.puts ('Importing districts')
+params = {
+  file_path: 'wijk.zip',
+  title: 'wijknaam',
+  host: config[:endpoint][:url],
+  layer: 'admr',
+  srid: '28992',
+  name: config[:owner][:name],
+  password: config[:owner][:password]
+}
+
+imp = Importer.new(params)
+
+
+params[:fields] = [:GM_NAAM, :GM_CODE, :WK_CODE, :WK_NAAM]
+
+
+params[:alternate_fields][:GM_NAAM] = 'gemeentenaam'
+params[:alternate_fields][:GM_CODE] = 'gemeente_code'
+params[:alternate_fields][:WK_CODE] = 'wijk_code'
+params[:alternate_fields][:WK_NAAM] = 'wijknaam'
+
+
+imp.do_import do |object_datum|
+  id = object_datum[:data]['gemeentenaam'] + '.' + object_datum[:data]['wijknaam']
+  id = object_datum[:data]['gemeente_code'] + '.' + object_datum[:data]['wijk_code'] if id == '.'
+  object_datum[:id] = 'nl.' + id
+  object_datum[:data][:admn_level] = 4
+end
+
+# ==================================== Neighbourhoods ====================================
+
+$stderr.puts ('Importing neighbourhoods')
+params = {
+  file_path: 'buurt.zip',
+  title: 'buurtnaam',
+  host: config[:endpoint][:url],
+  layer: 'admr',
+  srid: '28992',
+  name: config[:owner][:name],
+  password: config[:owner][:password]
+}
+
+imp = Importer.new(params)
+
+
+params[:fields] = [:BU_CODE, :BU_NAAM, :GM_NAAM, :GM_CODE, :WK_CODE]
+
+
+params[:alternate_fields][:GM_NAAM] = 'gemeentenaam'
+params[:alternate_fields][:GM_CODE] = 'gemeente_code'
+params[:alternate_fields][:WK_CODE] = 'wijk_code'
+params[:alternate_fields][:BU_CODE] = 'buurt_code'
+params[:alternate_fields][:BU_NAAM] = 'buurtnaam'
+
+
+
+imp.do_import do |object_datum|
+  id = object_datum[:data]['buurt_code'] + '.' + object_datum[:data]['buurtnaam']
+  if id != '.'
+    object_datum[:id] = 'nl.' + id
+    object_datum[:data][:admn_level] = 5
+  else
+    object_datum[:data] = nil
+  end
+end
+
 
 # ===================================== Provinces =====================================
 

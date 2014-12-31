@@ -1,0 +1,11 @@
+{
+  "endpoint": {
+    "url": "https://195.169.149.30"
+  },
+  "owner": {
+    "name": "citysdk",
+    "password": ""
+  },
+  "db": {
+  }
+}
