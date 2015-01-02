@@ -7,7 +7,7 @@
     ],
     "category": "administrative",
     "subcategory": "statistics",
-    "rdf_type": "dbp:Official_statistics",
+    "rdf_type": "dbpedia:Official_statistics",
     "licence": "CC0",
     "fields": [
       {  
