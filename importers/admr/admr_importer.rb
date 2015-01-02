@@ -55,7 +55,7 @@ $api.batch_size = 25
 
 $stderr.puts ('Importing municipalities')
 params = {
-  file_path: 'gemeente.zip',
+  file_path: './data/gemeente.zip',
   title: 'gemeentenaam',
   host: config[:endpoint][:url],
   layer: 'admr',
@@ -98,7 +98,7 @@ end
 
 $stderr.puts ('Importing districts')
 params = {
-  file_path: 'wijk.zip',
+  file_path: './data/wijk.zip',
   title: 'wijknaam',
   host: config[:endpoint][:url],
   layer: 'admr',
@@ -130,7 +130,7 @@ end
 
 $stderr.puts ('Importing neighbourhoods')
 params = {
-  file_path: 'buurt.zip',
+  file_path: './data/buurt.zip',
   title: 'buurtnaam',
   host: config[:endpoint][:url],
   layer: 'admr',
@@ -169,7 +169,7 @@ end
 $stderr.puts ('Importing provinces')
 
 params = {
-  file_path: 'provincies.zip',
+  file_path: './data/provincies.zip',
   title: 'provincienaam',
   host: config[:endpoint][:url],
   layer: 'admr',
@@ -191,7 +191,7 @@ end
 
 $stderr.puts ('Importing national border')
 params = {
-  file_path: 'landsgrens.zip',
+  file_path: './data/landsgrens.zip',
   title: 'landsnaam',
   layer: 'admr',
   srid: '28992',

@@ -1,0 +1,555 @@
+  {
+    "name": "cbs",
+    "title": "Demographics & Statistics",
+    "description": "Dutch demographic and statistics data from the Centraal Bureau voor de Statistiek",
+    "data_sources": [
+      "http://www.cbs.nl/nl-NL/menu/themas/dossiers/nederland-regionaal/links/2013-buurtkaart-shape-versie-1-el.htm"
+    ],
+    "category": "administrative",
+    "subcategory": "statistics",
+    "rdf_type": "dbp:Official_statistics",
+    "licence": "CC0",
+    "fields": [
+      {  
+        "name": "aantal_hh",
+        "description": "Het aantal particuliere huishoudens is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het aantal particuliere huishoudens tot en met 2003 is een voorlopig cijfer. De cijfers vanaf 2004 zijn definitief en komen overeen met de definitieve cijfers in de StatLinetabel Regionale Kerncijfers Nederland. De cijfers zijn tot en met het jaar 2009 afgerond op tientallen. Vanaf het jaar 2010 zijn ze afgerond op vijftallen.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+
+      {
+        "name": "aant_inw",
+        "description": "Het aantal inwoners op 1 januari. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). De standcijfers van het aantal inwoners kunt u niet gebruiken voor een correcte weergave van de ontwikkeling in de tijd. De grenzen of codes van wijken en buurten kunnen jaarlijks wijzigen waardoor adressen van een andere code worden voorzien. De cijfers zijn tot en met het jaar 2009 afgerond op tientallen. Vanaf het jaar 2010 zijn ze afgerond op vijftallen.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "aant_man",
+        "description": "Het aantal mannen heeft betrekking op 1 januari. Aantallen mannen zijn ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). De cijfers zijn tot en met het jaar 2009 afgerond op tientallen. Vanaf het jaar 2010 zijn ze afgerond op vijftallen.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "aant_vrouw",
+        "description": "Het aantal vrouwen heeft betrekking op 1 januari. Aantallen vrouwen zijn ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). De cijfers zijn tot en met het jaar 2009 afgerond op tientallen. Vanaf het jaar 2010 zijn ze afgerond op vijftallen.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "af_biblio",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot de dichtstbijzijnde bibliotheek, berekend over de weg. Bibliotheken en hun vestigingen zoals deze zijn opgenomen in de database G!DS. Opgenomen zijn de vestigingen en de servicepunten. De miniservicepunten, zelfbedieningsbibliotheken en de bibliobussen zijn niet opgenomen. Een vestiging voldoet aan de volgende criteria: minimaal 15 uur per week open, digitale toegang tot de gehele collectie en activiteitenaanbod, vraagbemiddeling, culturele/literaire activiteiten, aanbod voor scholieren/instellingen passend bij de keuzes die gemaakt zijn in het spreidings- en- marketingbeleid en studiemogelijkheden. Een servicepunt biedt minimaal het volgende dienstverleningsniveau: is minimaal 4 uur per week open, biedt digitale toegang tot het totale activiteitenaanbod en voorziet in vraagbemiddeling (zowel persoonlijk als via internet).",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "af_brandw",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot de dichtstbijzijnde brandweerkazerne, berekend over de weg. Exclusief locaties van blusboten.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "af_bso",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot de dichtstbijzijnde buitenschoolse opvang, berekend over de weg. Hier worden kinderen in de basisschoolleeftijd voor en/of na schooltijd, tijdens studie- en adv dagen van leraren en in de vakanties opgevangen.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "af_ijsbaan",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot de dichtstbijzijnde schaatsbaan van kunstijs, geopend tijdens het winterseizoen, berekend over de weg.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "af_kdv",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot het dichtstbijzijnde kinderdagverblijf, berekend over de weg. Op het kinderdagverblijf kunnen kinderen van 0 tot 4 jaar gedurende één of meer dagdelen per week het hele jaar door worden opgevangen. Er kan voor meer dan 5 uur per dag van het kinderdagverblijf gebruik gemaakt worden en voor maximaal 10 dagdelen per week.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "af_oprith",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot de dichtstbijzijnde oprit van een rijks- of provinciale weg, berekend over de weg. Toegang tot een rijks- of provinciale weg. Als uitgangspunt voor de opritten is het Nationale Wegenbestand (een product van Adviesdienst Verkeer en Vervoer van het Ministerie van Infrastructuur en Milieu) gebruikt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "af_overst",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot het dichtstbijzijnde belangrijke overstapstation, berekend over de weg.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "af_treinst",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot het dichtstbijzijnde treinstation, berekend over de weg.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "af_ziek_e",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot het dichtstbijzijnde ziekenhuis, berekend over de weg. In een ziekenhuis kunnen patiënten voor meer dan 24 uur opgenomen worden en er kunnen grote operaties worden uitgevoerd. Een buitenpolikliniek is een locatie van een ziekenhuis waar niet bedlegerige patiënten worden behandeld of gecontroleerd. Patiënten worden er niet voor meer dan 24 uur opgenomen en er worden geen grote operaties uitgevoerd.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "af_ziek_i",
+        "description": "De gemiddelde afstand van alle inwoners in een gebied tot het dichtstbijzijnde ziekenhuis, berekend over de weg. In een ziekenhuis kunnen patiënten voor meer dan 24 uur opgenomen worden en er kunnen grote operaties worden uitgevoerd. Een buitenpolikliniek is een locatie van een ziekenhuis waar niet bedlegerige patiënten worden behandeld of gecontroleerd. Patiënten worden er niet voor meer dan 24 uur opgenomen en er worden geen grote operaties uitgevoerd.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitKilometer"
+      },
+
+      {
+        "name": "auto_hh",
+        "description": "Het aantal personenauto’s per (particulier) huishouden op 1 januari. De personenauto’s worden regionaal ingedeeld met behulp van de kentekenregistratie. Personenauto’s die geregistreerd staan op het adres van het lease- of verhuurbedrijf vertekenen daarom de autodichtheid per huishouden. Het aantal personenauto’s per huishouden is vermeld bij minimaal 50 huishoudens en bij een waarde van maximaal 2,5 personenauto’s per huishouden.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "auto_land",
+        "description": "Het aantal personenauto’s per km2 land op 1 januari. De personenauto’s worden regionaal ingedeeld met behulp van de kentekenregistratie. Personenauto’s die geregistreerd staan op het adres van het lease- of verhuurbedrijf vertekenen daarom de autodichtheid per oppervlakte. Het aantal personenauto’s naar oppervlakte is vermeld als ook het aantal personenauto’s per huishouden is gepubliceerd. Dat is bij minimaal 50 huishoudens en bij een waarde van maximaal 2,5 personenauto’s per huishouden.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPerKm2"
+      },
+
+      {
+        "name": "auto_tot",
+        "description": "Het aantal motorvoertuigen ingericht voor het vervoer van ten hoogste 8 passagiers (exclusief bestuurder) op 1 januari. De cijfers zijn afgerond op vijftallen.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av10ziek_e",
+        "description": "Het gemiddeld aantal ziekenhuizen binnen 10 kilometer over de weg voor alle inwoners van een gebied. In een ziekenhuis kunnen patiënten voor meer dan 24 uur opgenomen worden en er kunnen grote operaties worden uitgevoerd. Een buitenpolikliniek is een locatie van een ziekenhuis waar niet bedlegerige patiënten worden behandeld of gecontroleerd. Patiënten worden er niet voor meer dan 24 uur opgenomen en er worden geen grote operaties uitgevoerd.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av10ziek_i",
+        "description": "Het gemiddeld aantal ziekenhuizen binnen 10 kilometer over de weg voor alle inwoners van een gebied. In een ziekenhuis kunnen patiënten voor meer dan 24 uur opgenomen worden en er kunnen grote operaties worden uitgevoerd. Een buitenpolikliniek is een locatie van een ziekenhuis waar niet bedlegerige patiënten worden behandeld of gecontroleerd. Patiënten worden er niet voor meer dan 24 uur opgenomen en er worden geen grote operaties uitgevoerd.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av1_bso",
+        "description": "Het gemiddeld aantal locaties van buitenschoolse opvang binnen 1 kilometer over de weg voor alle inwoners van een gebied. Hier worden kinderen in de basisschoolleeftijd voor en/of na schooltijd, tijdens studie- en adv dagen van leraren en in de vakanties opgevangen.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av1_kdv",
+        "description": "Het gemiddeld aantal kinderdagverblijven binnen 1 kilometer over de weg voor alle inwoners van een gebied. Op het kinderdagverblijf kunnen kinderen van 0 tot 4 jaar gedurende één of meer dagdelen per week het hele jaar door worden opgevangen. Er kan voor meer dan 5 uur per dag van het  kinderdagverblijf gebruik gemaakt worden en voor maximaal 10 dagdelen per week.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av20ziek_e",
+        "description": "Het gemiddeld aantal ziekenhuizen binnen 20 kilometer over de weg voor alle inwoners van een gebied. In een ziekenhuis kunnen patiënten voor meer dan 24 uur opgenomen worden en er kunnen grote operaties worden uitgevoerd. Een buitenpolikliniek is een locatie van een ziekenhuis waar niet bedlegerige patiënten worden behandeld of gecontroleerd. Patiënten worden er niet voor meer dan 24 uur opgenomen en er worden geen grote operaties uitgevoerd.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av20ziek_i",
+        "description": "Het gemiddeld aantal ziekenhuizen binnen 20 kilometer over de weg voor alle inwoners van een gebied. In een ziekenhuis kunnen patiënten voor meer dan 24 uur opgenomen worden en er kunnen grote operaties worden uitgevoerd. Een buitenpolikliniek is een locatie van een ziekenhuis waar niet bedlegerige patiënten worden behandeld of gecontroleerd. Patiënten worden er niet voor meer dan 24 uur opgenomen en er worden geen grote operaties uitgevoerd.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av3_bso",
+        "description": "Het gemiddeld aantal locaties van buitenschoolse opvang binnen 3 kilometer over de weg voor alle inwoners van een gebied. Hier worden kinderen in de basisschoolleeftijd voor en/of na schooltijd, tijdens studie- en adv dagen van leraren en in de vakanties opgevangen.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av3_kdv",
+        "description": "Het gemiddeld aantal kinderdagverblijven binnen 3 kilometer over de weg voor alle inwoners van een gebied. Op het kinderdagverblijf kunnen kinderen van 0 tot 4 jaar gedurende één of meer dagdelen per week het hele jaar door worden opgevangen. Er kan voor meer dan 5 uur per dag van het kinderdagverblijf gebruik gemaakt worden en voor maximaal 10 dagdelen per week.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av5_bso",
+        "description": "Het gemiddeld aantal locaties van buitenschoolse opvang binnen 5 kilometer over de weg voor alle inwoners van een gebied. Hier worden kinderen in de basisschoolleeftijd voor en/of na schooltijd, tijdens studie- en adv dagen van leraren en in de vakanties opgevangen.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av5_kdv",
+        "description": "Het gemiddeld aantal kinderdagverblijven binnen 5 kilometer over de weg voor alle inwoners van een gebied. Op het kinderdagverblijf kunnen kinderen van 0 tot 4 jaar gedurende één of meer dagdelen per week het hele jaar door worden opgevangen. Er kan voor meer dan 5 uur per dag van het kinderdagverblijf gebruik gemaakt worden en voor maximaal 10 dagdelen per week.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av5_ziek_e",
+        "description": "Het gemiddeld aantal ziekenhuizen binnen 5 kilometer over de weg voor alle inwoners van een gebied. In een ziekenhuis kunnen patiënten voor meer dan 24 uur opgenomen worden en er kunnen grote operaties worden uitgevoerd. Een buitenpolikliniek is een locatie van een ziekenhuis waar niet bedlegerige patiënten worden behandeld of gecontroleerd. Patiënten worden er niet voor meer dan 24 uur opgenomen en er worden geen grote operaties uitgevoerd.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "av5_ziek_i",
+        "description": "Het gemiddeld aantal ziekenhuizen binnen 5 kilometer over de weg voor alle inwoners van een gebied. In een ziekenhuis kunnen patiënten voor meer dan 24 uur opgenomen worden en er kunnen grote operaties worden uitgevoerd. Een buitenpolikliniek is een locatie van een ziekenhuis waar niet bedlegerige patiënten worden behandeld of gecontroleerd. Patiënten worden er niet voor meer dan 24 uur opgenomen en er worden geen grote operaties uitgevoerd.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "a_bst_b",
+        "description": "Het aantal personenauto’s rijdend op benzine. Benzine is een mengsel van koolwaterstof dat wordt gebruikt als brandstof voor benzinemotoren.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "a_bst_nb",
+        "description": "Het aantal personenauto’s met overige brandstof. Hieronder vallen: diesel, LPG, elektriciteit (incl. Hybride), waterstof, alcohol en CNG.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "a_lftj6j",
+        "description": "Het aantal personenauto’s van jonger dan 6 jaar. Deze leeftijd is afgeleid van het bouwjaar van het voertuig.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "a_lfto6j",
+        "description": "Het aantal personenauto’s van 6 jaar en ouder. Deze leeftijd is afgeleid van het bouwjaar van het voertuig.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "bedr_auto",
+        "description": "Het aantal bestelauto’s, vrachtauto’s, trekkers (motorvoertuigen ingericht voor het trekken van opleggers), speciale voertuigen (bedrijfsauto’s voor bijzondere doeleinden zoals bijvoorbeeld brandweerauto’s, reinigingsauto’s, takelwagens) en autobussen op 1 januari. De cijfers zijn afgerond op vijftallen.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "bev_dichth",
+        "description": "Het aantal inwoners per km2 land is bepaald door het (niet afgeronde) aantal inwoners op 1 januari te delen door de (niet afgeronde) landoppervlakte. De bevolkingsdichtheid is opgenomen indien er 10 of meer inwoners in de buurt voorkomen. Het betreft in deze versie voorlopige cijfers. De definitieve zijn in de loop van 2014 op Statline te vinden.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPerKm2"
+      },
+
+      {
+        "name": "buurt_code",
+        "description": "Voor de codering van de binnen wijken onderscheiden buurten is een code van acht posities opgenomen. Gemeentecode (4) + wijkcode (2) + buurtcode (2).",
+        "lang": "@nl",
+        "type": "rdfs:label",
+        "unit": "cdk:unitNone"
+      },
+
+      {
+        "name": "buurtnaam",
+        "description": "De buurtnaam is opgegeven door de gemeente die hiervan eigenaar is.",
+        "lang": "@nl",
+        "type": "rdfs:label",
+        "unit": "cdk:unitNone"
+      },
+
+      {
+        "name": "dek_perc",
+        "description": "Indicatie (in zes klassen) van het percentage adressen in een buurt met de meest voorkomende postcode. Dit percentage is ontleend aan het Geografisch Basisregister (GBR, definitieve versie). De volgende klassenindeling is gehanteerd: 1: >90%vandeadressenheeftdezelfdevermeldenumeriekepostcode; 2: 81-90% van de adressen heeft dezelfde vermelde numerieke postcode; 3: 71-80%vandeadressenheeftdezelfdevermeldenumeriekepostcode; 4: 61-70% van de adressen heeft dezelfde vermelde numerieke postcode; 5: 51-60% van de adressen heeft dezelfde vermelde numerieke postcode; 6: 50% of minder van de adressen heeft dezelfde vermelde numerieke postcode.",
+        "lang": "@nl",
+        "type": "rdfs:label",
+        "unit": "cdk:unitNone"
+      },
+
+      {
+        "name": "gem_hh_gr",
+        "description": "Dit gemiddelde is berekend als het aantal in particuliere huishoudens levende personen gedeeld door het aantal particuliere huishoudens. De gemiddelde huishoudensgrootte is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). De gemiddelde huishoudensgrootte tot en met 2003 is een voorlopig cijfer. De cijfers vanaf 2004 zijn definitief en komen overeen met de definitieve cijfers in de Regionale Kerncijfers Nederland. Het gemiddelde is opgenomen indien er 10 of meer huishoudens in de buurt voorkomen.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "gemeente_code",
+        "description": "De gemeentecode geeft de numerieke aanduiding van gemeenten weer, die door het CBS in overleg met het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties (BZK) wordt vastgesteld. Deze viercijferige code is gekoppeld aan de naam van de gemeente: wijzigt de naam van een gemeente, dan wijzigt ook de code.",
+        "lang": "@nl",
+        "type": "rdfs:label",
+        "unit": "cdk:unitNone"
+      },
+
+      {
+        "name": "gemeentenaam",
+        "description": "De naam van de bestuurlijke gemeente. Deze naam volgt de officiële schrijfwijze.",
+        "lang": "@nl",
+        "type": "rdfs:label",
+        "unit": "cdk:unitNone"
+      },
+
+      {
+        "name": "motor_2w",
+        "description": "Het aantal motorrijwielen, scooters, motorcarriers en motorinvalidenwagens met een motorrijwielkentekenbewijs op 1 januari. De cijfers zijn afgerond op vijftallen.",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitScalar"
+      },
+
+      {
+        "name": "opp_land",
+        "description": "De oppervlakte land is bepaald door het meest recente digitale bestand Bodemgebruik te combineren met het digitale bestand van gemeente-, wijk- en buurtgrenzen. Voor de jaren 2003 tot en met 2005 is uitgegaan van het bestand Bodemgebruik 2000. Voor de jaren 2006 tot en met 2008 is uitgegaan van het bestand Bodemgebruik 2003. Voor de jaren 2009 tot en met 2010 is uitgegaan van het bestand Bodemgebruik 2006. Voor het jaar 2011 is uitgegaan van het bestand Bodemgebruik 2008. De oppervlakte land wordt uitgedrukt in hele hectaren (ha.).",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitHectare"
+      },
+
+      {
+        "name": "opp_tot",
+        "description": "De totale oppervlakte is de som van de oppervlakten water en land in hele hectaren (ha.).",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitHectare"
+      },
+
+      {
+        "name": "opp_water",
+        "description": "Oppervlakte water omvat zowel binnen- als buitenwater. Tot binnenwater wordt gerekend alle water niet onderhevig aan getijden en breder dan 6 meter, zoals het IJsselmeer, Markermeer, Randmeren, sloten, rivieren, kanalen en dergelijke. Onder het buitenwater valt alle water onderhevig aan getijden, zoals de Waddenzee, Oosterschelde, Westerschelde en het gemeentelijk ingedeelde gedeelte van de Noordzee. De oppervlakte water is bepaald door het meest recente digitale bestand Bodemgebruik te combineren met het digitale bestand van gemeente-, wijk- en buurtgrenzen. Voor de jaren 2003 tot en met 2005 is uitgegaan van het bestand Bodemgebruik 2000. Voor de jaren 2006 tot en met 2008 is uitgegaan van het bestand Bodemgebruik 2003. Voor de jaren 2009 tot en met 2010 is uitgegaan van het bestand Bodemgebruik 2006. Voor het jaar 2011 is uitgegaan van het bestand Bodemgebruik 2008. Het buitenwater is alleen op gemeenteniveau vermeld, water per wijk of buurt bestaat alleen uit binnenwater. De oppervlakte water wordt uitgedrukt in hele hectaren (ha.).",
+        "lang": "@nl",
+        "type": "xsd:integer",
+        "unit": "cdk:unitHectare"
+      },
+
+      {
+        "name": "postcode",
+        "description": "Meest voorkomende numerieke postcode in een buurt, op grond van het aantal adressen in het Geografisch Basisregister (GBR, definitieve versie) per 1 januari.",
+        "lang": "@nl",
+        "type": "rdfs:label",
+        "unit": "cdk:unitNone"
+      },
+
+      {
+        "name": "p_00_14_jr",
+        "description": "Dit veld geeft het aantal inwoners weer dat op 1 januari 0 tot 15 jaar oud is, uitgedrukt in hele procenten van het aantal inwoners. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 inwoners of meer per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_15_24_jr",
+        "description": "Dit veld geeft het aantal inwoners weer dat op 1 januari 15 tot 25 jaar oud is, uitgedrukt in hele procenten van het aantal inwoners. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 inwoners of meer per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_25_44_jr",
+        "description": "Dit veld geeft het aantal inwoners weer dat op 1 januari 25 tot 45 jaar oud is, uitgedrukt in hele procenten van het aantal inwoners. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 inwoners of meer per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_45_64_jr",
+        "description": "Dit veld geeft het aantal inwoners weer dat op 1 januari 45 tot 65 jaar oud is, uitgedrukt in hele procenten van het aantal inwoners. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 inwoners of meer per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_65_eo_jr",
+        "description": "Dit veld geeft het aantal inwoners weer dat op 1 januari 65 jaar of ouder is, uitgedrukt in hele procenten van het aantal inwoners. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 inwoners of meer per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_ant_aru",
+        "description": "Het aandeel allochtonen met herkomstgroep van de tot het Nederlandse koninkrijk behorende eilanden Bonaire, Curaçao, Saba, Sint-Eustatius, Sint-Maarten en Aruba op 1 januari, uitgedrukt in hele procenten van het aantal inwoners. Het percentage is vermeld bij 50 of meer inwoners per buurt en minimaal 10 niet-westerse allochtonen per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_eenp_hh",
+        "description": "Het aantal huishoudens met één persoon, die ouder is dan 14 jaar, uitgedrukt in hele procenten van het totaal aantal particuliere huishoudens. Het aandeel eenpersoonshuishoudens is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het aandeel eenpersoonshuishoudens tot en met 2003 is een voorlopig cijfer. De cijfers vanaf 2004 zijn definitief en komen overeen met de definitieve cijfers in de Regionale Kerncijfers Nederland. Het percentage is opgenomen indien er 10 of meer huishoudens in de buurt voorkomen.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_gehuwd",
+        "description": "Het aantal inwoners dat op 1 januari gehuwd is, uitgedrukt in hele procenten van het totaal aantal inwoners. De burgerlijke staat gehuwd ontstaat na sluiting van een huwelijk of het aangaan van een geregistreerd partnerschap. Tot de gehuwden worden ook personen gerekend die gescheiden zijn van tafel en bed, want zij blijven formeel gehuwd. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 inwoners of meer per buurt",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_gescheid",
+        "description": "Het aantal inwoners dat op 1 januari gescheiden is, uitgedrukt in hele procenten van het totaal aantal inwoners. De burgerlijke staat gescheiden ontstaat na ontbinding van een huwelijk door echtscheiding of na ontbinding van een geregistreerd partnerschap anders dan door het overlijden van de partner. Personen die gescheiden zijn van tafel en bed worden tot de gehuwden gerekend. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 inwoners of meer per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_hh_m_k",
+        "description": "Meerpersoonshuishoudens met kinderen bestaan uit niet-gehuwde paren met kinderen, echtparen met kinderen en eenouderhuishoudens. Het aandeel huishoudens met kinderen is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het aandeel meerpersoonshuishoudens met kinderen tot en met 2003 is een voorlopig cijfer. De cijfers vanaf 2004 zijn definitief en komen overeen met de definitieve cijfers in de Regionale Kerncijfers Nederland. Het percentage is opgenomen indien er 10 of meer huishoudens in de buurt voorkomen.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_hh_z_k",
+        "description": "Meerpersoonshuishoudens zonder kinderen bestaan uit niet-gehuwde paren zonder kinderen, echtparen zonder kinderen en overige huishoudens. Het aandeel huishoudens zonder kinderen is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het aandeel meerpersoonshuishoudens zonder kinderen tot en met 2003 is een voorlopig cijfer. De cijfers vanaf 2004 zijn definitief en komen overeen met de definitieve cijfers in de Regionale Kerncijfers Nederland. Het percentage is opgenomen indien er 10 of meer huishoudens in de buurt voorkomen.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_marokko",
+        "description": "Het aandeel allochtonen met herkomstgroep Marokko, Ifni, Spaanse Sahara en Westelijke Sahara op 1 januari, uitgedrukt in hele procenten van het aantal inwoners. Het percentage is vermeld bij 50 of meer inwoners per buurt en minimaal 10 niet-westerse allochtonen per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_n_w_al",
+        "description": "Het aantal allochtonen met een niet-westerse herkomst op 1 januari, uitgedrukt in hele procenten van het aantal inwoners. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 of meer inwoners per buurt. Tot en met 2003 gold bovendien de aanvullende eis van de aanwezigheid van minimaal 10 niet-westerse allochtonen en werd het aantal vóór omrekening naar een percentage eerst afgerond op vijftallen.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_ongehuwd",
+        "description": "Het aantal inwoners dat op 1 januari ongehuwd is, uitgedrukt in hele procenten van het totaal aantal inwoners. De burgerlijke staat ongehuwd geeft aan dat een persoon nog nooit een huwelijk heeft gesloten of een geregistreerd partnerschap is aangegaan. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 inwoners of meer per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_over_nw",
+        "description": "Het aandeel allochtonen met een overige niet-westerse herkomst op 1 januari, uitgedrukt in hele procenten van het aantal inwoners. Het percentage is vermeld bij 50 of meer inwoners per buurt en minimaal 10 niet-westerse allochtonen per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_surinam",
+        "description": "Het aandeel allochtonen met herkomstgroep Suriname op 1 januari, uitgedrukt in hele procenten van het aantal inwoners. Het percentage is vermeld bij 50 of meer inwoners per buurt en minimaal 10 niet-westerse allochtonen per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_turkije",
+        "description": "Het aandeel allochtonen met herkomstgroep Turkije op 1 januari, uitgedrukt in hele procenten van het aantal inwoners. Het percentage is vermeld bij 50 of meer inwoners per buurt en minimaal 10 niet-westerse allochtonen per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_verweduw",
+        "description": "Het aantal inwoners dat op 1 januari verweduwd is, uitgedrukt in hele procenten van het totaal aantal inwoners. De burgerlijke staat verweduwd ontstaat na ontbinding van een huwelijk of geregistreerd partnerschap door overlijden van de partner. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Het percentage is vermeld bij 50 inwoners of meer per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "p_west_al",
+        "description": "Het aantal allochtonen op 1 januari, uitgedrukt in hele procenten van het aantal inwoners. Dit gegeven is ontleend aan de Structuurtelling Gemeentelijke Basisadministratie (GBA). Tot de categorie “Westers totaal” behoren allochtonen uit Europa, Noord-Amerika, Oceanië, Indonesië en Japan. Het percentage is vermeld bij 50 of meer inwoners per buurt.",
+        "lang": "@nl",
+        "type": "xsd:float",
+        "unit": "cdk:unitPercent"
+      },
+
+      {
+        "name": "wijk_code",
+        "description": "Voor de codering van de binnen gemeenten onderscheiden wijken is een code van zes posities opgenomen. Gemeentecode (4) + wijkcode (2).",
+        "lang": "@nl",
+        "type": "rdfs:label",
+        "unit": "cdk:unitNone"
+      },
+
+      {
+        "name": "wijknaam",
+        "description": "De wijknaam is opgegeven door de gemeente die hiervan eigenaar is.",
+        "lang": "@nl",
+        "type": "rdfs:labelt",
+        "unit": "cdk:unitNone"
+      }
+    ],
+    "context": {
+    }
+  }
+
+
+
