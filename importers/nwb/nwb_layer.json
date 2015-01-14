@@ -13,11 +13,29 @@
   "fields": [
     {
       "description": "Unique number of road segment",
+      "lang": "@en",
       "name": "wegvak_id",
       "type": "xsd:string",
       "equivalent_property": "rdfs:label",
       "unit": "cdk:unitNone"
-      }
+    },
+    {
+      "description": "Name of the street the road segment is part of",
+      "lang": "@en",
+      "name": "straatnaam",
+      "type": "xsd:string",
+      "equivalent_property": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Unique number identifying a municipality in the Netherlands",
+      "lang": "@en",
+      "name": "gemeente_id",
+      "type": "xsd:string",
+      "equivalent_property": "rdfs:label",
+      "unit": "cdk:unitNone"
+    }
+
   ],
   "context": {
   }

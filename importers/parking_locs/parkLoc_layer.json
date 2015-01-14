@@ -1,0 +1,73 @@
+{
+  "name": "parking.garage",
+  "title": "Parking Garages",
+  "description": "Informatie over parkeergarages en P+R-terreinen. Van deze parkeervoorziening is de locatie, capaciteit en actuele beschikbaarheid voor kort- en langparkeren opgenomen.",
+  "data_sources": [
+    "Dienst IVV, Amsterdam",
+    "http://www.trafficlink-online.nl/trafficlinkdata/wegdata/IDPA_ParkingLocation.GeoJSON"
+  ],
+  "category": "mobility",
+  "subcategory": "parking",
+  "rdf_type": "dbpedia:Multi-storey_car_park",
+  "licence": "Not Specified",
+  "webservice_url": "http://services.citysdk.waag.org/parking",
+  "update_rate": "300",
+  "fields": [
+    {
+      "description": "Naam van de parkeergarage of P+R-terrein",
+      "lang": "@nl",
+      "name": "Name",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Datum en tijd van laatste update, in UTC (Coordinated Universal Time)-formaat",
+      "lang": "@nl",
+      "name": "PubDate",
+      "type": "rdfs:date",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Type van parkeergelegenheid, in alle gevallen ‘parkinglocation’",
+      "lang": "@nl",
+      "name": "Type",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Status van de parkeergelegenheid. Mogelijke opties: 'ok', 'warning', 'error'. ",
+      "lang": "@nl",
+      "name": "State",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Het aantal beschikbare parkeerplekken voor ‘kort parkeren’. Dit geeft het aantal beschikbare plekken voor iedereen die in deze parkeergelegenheid wil parkeren, op basis van het normale (uur)tarief (dus zonder vergunningen, abonnementen, gereserveerde plekken, etc.). Voor de waarde van “VOL” of “VRIJ” in het parkeerverwijzingssysteem wordt alleen de FreeSpaceShort in acht genomen.",
+      "lang": "@nl",
+      "name": "FreeSpaceShort",
+      "type": "rdfs:integer",
+      "unit": "cdk:unitScalar"
+    },
+    {
+      "description": "Het aantal beschikbare parkeerplekken voor ‘lang parkeren’. Dit betreft plaatsen die alleen beschikbaar zijn voor abonnementhouders, vergunningshouders en andere gereserveerde plekken die niet beschikbaar zijn voor ‘kort parkeren’.",
+      "lang": "@en",
+      "name": "FreeSpaceLong",
+      "type": "rdfs:integer",
+      "unit": "cdk:unitScalar"
+    },
+    {
+      "description": "De totale capaciteit van de parkeergelegenheid voor ‘kort parkeren’.",
+      "lang": "@nl",
+      "name": "ShortCapacity",
+      "type": "rdfs:integer",
+      "unit": "cdk:unitScalar"
+    },
+    {
+      "description": "De totale capaciteit van de parkeergelegenheid voor ‘lang parkeren’.",
+      "lang": "@nl",
+      "name": "LongCapacity",
+      "type": "rdfs:integer",
+      "unit": "cdk:unitScalar"
+    }
+  ]
+}
