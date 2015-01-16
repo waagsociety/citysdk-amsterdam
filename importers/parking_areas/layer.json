@@ -1,0 +1,13 @@
+{
+  "name": "parking.areas",
+  "title": "Parking Areas",
+  "description": "Informatie over parkeergebieden.",
+  "data_sources": [
+    "Nationaal Parkeerregister",
+    "https://api.datamarket.azure.com/opendata.rdw/StatischParkeren.Open.Data/v1/AREAGEOMETRY"
+  ],
+  "category": "mobility",
+  "subcategory": "parking",
+  "rdf_type": "dbpedia:Parking_area",
+  "licence": "Not Specified"
+}

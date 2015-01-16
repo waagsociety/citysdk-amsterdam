@@ -1,0 +1,11 @@
+{
+  "endpoint": {
+    "url": "https://api.citysdk.waag.org"
+  },
+  "owner": {
+    "name": "citysdk",
+    "password": "Nif3waC0yAf7Gat6"
+  },
+  "db": {
+  }
+}
