@@ -30,13 +30,13 @@ rescue Exception => e
   exit!(-1)
 end
 
-# ================================== Create 'admr' layer ==================================
+# ================================== Create 'parking.areas' layer ==================================
 
 $layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/layer.json"), symbolize_names: true)
 
 # Set JSON-LD context
 $layer[:context] = {
-  :"@vocab" => "#{config[:endpoint][:url]}layers/#{$layer[:name]}/fields/"
+  :"@vocab" => "#{config[:endpoint][:base_uri]}#{config[:endpoint][:endpoint_code]}/layers/#{$layer[:name]}/fields/"
 }
 
 $api = API.new(config[:endpoint][:url])
@@ -49,7 +49,7 @@ $stderr.puts ("Deleting layer '#{$layer[:name]}' and objects, if layer already e
 begin
   $api.delete("/layers/#{$layer[:name]}")
 rescue CitySDK::HostException => e
-  
+
 end
 $stderr.puts ("Creating layer '#{$layer[:name]}'")
 $api.post("/layers", $layer)
@@ -89,7 +89,7 @@ class LibHandler < ::Ox::Sax
 
   def end_element(name)
     return if name == :'d:AreaGeometryGml'
-    
+
     if name == :'d:AreaGeometryTxt'
       @entry[:geometry] =  parseWKT(@v)
       return
@@ -102,9 +102,9 @@ class LibHandler < ::Ox::Sax
       @entry[:properties].delete('AREAGEOMETRY_ID')
       o[:properties][:data] = @entry[:properties]
       o[:properties][:title] = @entry[:properties]['AreaId']
-      
+
       puts JSON.pretty_generate o
-      
+
       $api.create_object(o)
       @entry = {properties: {}}
     elsif name.to_s =~ /d:(.+)/

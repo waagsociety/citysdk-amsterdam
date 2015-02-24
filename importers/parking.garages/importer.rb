@@ -25,13 +25,13 @@ rescue Exception => e
   exit!(-1)
 end
 
-# ================================== Create 'admr' layer ==================================
+# ================================== Create 'parking.garages' layer ==================================
 
-$park_layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/parkLoc_layer.json"), symbolize_names: true)
+$park_layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/layer.json"), symbolize_names: true)
 
 # Set JSON-LD context
 $park_layer[:context] = {
-  :"@vocab" => "#{config[:endpoint][:url]}layers/parking.garage/fields/"
+  :"@vocab" => "#{config[:endpoint][:base_uri]}#{config[:endpoint][:endpoint_code]}/layers/parking.garage/fields/"
 }
 
 $api = API.new(config[:endpoint][:url])
@@ -44,7 +44,7 @@ $stderr.puts ("Deleting layer 'parking.garage' and objects, if layer already exi
 begin
   $api.delete('/layers/parking.garage')
 rescue CitySDK::HostException => e
-  
+
 end
 $stderr.puts ("Creating layer 'parking.garage'")
 $api.post("/layers", $park_layer)
@@ -66,7 +66,7 @@ params = {
 imp = Importer.new(params)
 
 imp.do_import do |object_datum|
-  
+
   puts JSON.pretty_generate(object_datum)
 
 end

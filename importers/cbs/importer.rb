@@ -26,13 +26,13 @@ rescue Exception => e
   exit!(-1)
 end
 
-# ================================== Create 'admr' layer ==================================
+# ================================== Create 'cbs' layer ==================================
 
-$cbs_layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/cbs_layer.json").force_encoding('UTF-8'), symbolize_names: true)
+$cbs_layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/layer.json").force_encoding('UTF-8'), symbolize_names: true)
 
 # Set JSON-LD context
 $cbs_layer[:context] = {
-  :"@vocab" => "#{config[:endpoint][:url]}layers/cbs/fields/"
+  :"@vocab" => "#{config[:endpoint][:base_uri]}#{config[:endpoint][:endpoint_code]}/layers/cbs/fields/"
 }
 
 $api = API.new(config[:endpoint][:url])

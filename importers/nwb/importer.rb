@@ -23,13 +23,13 @@ rescue Exception => e
   exit!(-1)
 end
 
-# ================================== Create 'admr' layer ==================================
+# ================================== Create 'nwb' layer ==================================
 
-$nwb_layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/nwb_layer.json"), symbolize_names: true)
+$nwb_layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/layer.json"), symbolize_names: true)
 
 # Set JSON-LD context
 $nwb_layer[:context] = {
-  :"@vocab" => "#{$config[:endpoint][:url]}layers/nwb/fields/"
+  :"@vocab" => "#{config[:endpoint][:base_uri]}#{config[:endpoint][:endpoint_code]}/layers/nwb/fields/"
 }
 
 $api = API.new($config[:endpoint][:url])
@@ -71,14 +71,14 @@ query = <<SQL
     #{columns.keys.map{ |c| c.to_s }.join(",")},
     -- Convert MultiLineStrings to LineStrings
     ST_AsGeoJSON(ST_CollectionHomogenize(geom)) AS geom
-  FROM 
+  FROM
     wegvakken;
 SQL
 
 
 begin
   DB[query].use_cursor.each do |row|
- 
+
     object = {
       type: 'Feature',
       geometry: JSON.parse(row[:geom]),
@@ -88,15 +88,15 @@ begin
         data: {}
       }
     }
-    
-    columns.each do |k,v| 
+
+    columns.each do |k,v|
       object[:properties][:data][v] = row[k]
     end
 
     $api.create_object(object)
-    
+
     index += 1
-    puts "Imported #{index} rows" if index % 1000 == 0     
+    puts "Imported #{index} rows" if index % 1000 == 0
   end
 ensure
 	$api.release

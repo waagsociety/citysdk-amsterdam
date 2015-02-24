@@ -27,7 +27,7 @@ end
 
 # ================================== Create 'admr' layer ==================================
 
-$admr_layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/admr_layer.json"), symbolize_names: true)
+$admr_layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/layer.json"), symbolize_names: true)
 
 # Set JSON-LD context
 $admr_layer[:context] = {
@@ -44,7 +44,7 @@ $stderr.puts ("Deleting layer 'admr' and objects, if layer already exists...")
 begin
   $api.delete('/layers/admr')
 rescue CitySDK::HostException => e
-  
+
 end
 $stderr.puts ("Creating layer 'admr'")
 $api.post("/layers", $admr_layer)
@@ -87,7 +87,7 @@ imp.do_import do |object_datum|
     object_datum[:id] = 'nl.' + object_datum[:data]['gemeentenaam']
   end
   object_datum[:data][:admn_level] = 3
-  
+
   # set object_datum[:data] to nil if you do not want to import this record
   object_datum[:data] = nil if object_datum[:id] == 'nl.'
 end
