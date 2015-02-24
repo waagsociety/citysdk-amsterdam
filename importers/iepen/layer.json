@@ -1,0 +1,96 @@
+{
+  "name": "amsterdam.iepen",
+  "title": "Elm trees in Amsterdam",
+  "description": "Information on elm trees in Amsterdam",
+  "data_sources": [
+    "Departement Ruimte en Duurzaamheid, Amsterdam"
+  ],
+  "category": "natural",
+  "subcategory": "trees",
+  "rdf_type": "dbpedia:Elm",
+  "licence": "Not Specified",
+  "webservice_url": "",
+  "update_rate": "0",
+  "fields": [
+    {
+      "description": "id #",
+      "name": "objectnummer",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Monumental status",
+      "name": "monumentaal",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "age of tree, 0-30, 30-50, 50+, or unknown",
+      "lang": "@en",
+      "name": "leeftijd",
+      "type": "rdfs:label",
+      "unit": "cdk:unitYear"
+    },
+    {
+      "description": "Kind of Elm",
+      "lang": "@en",
+      "name": "soort",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+      
+    {
+      "description": "Date of planting",
+      "lang": "@en",
+      "name": "plantjaar",
+      "type": "xsd:date"
+    },
+    
+    {
+      "description": "Size of trunk",
+      "lang": "@en",
+      "name": "stamdiameter",
+      "type": "xsd:integer",
+      "unit": "cdk:unitCentimeter"
+    },
+    
+    {
+      "description": "Height",
+      "lang": "@en",
+      "name": "hoogte",
+      "type": "xsd:integer",
+      "unit": "cdk:unitMeter"
+    },
+
+    {
+      "description": "Environment",
+      "lang": "@en",
+      "name": "beplantingssituatie",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    
+    {
+      "description": "Type of location",
+      "lang": "@en",
+      "name": "locatie",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Owner",
+      "lang": "@en",
+      "name": "eigenaar",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "City quarter",
+      "lang": "@en",
+      "name": "stadsdeel",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    }      
+
+  ]
+}

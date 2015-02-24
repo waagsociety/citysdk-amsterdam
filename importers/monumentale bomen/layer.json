@@ -1,0 +1,91 @@
+{
+  "name": "amsterdam.monumental.trees",
+  "title": "Monumental trees in Amsterdam",
+  "description": "Information on monumental trees in Amsterdam",
+  "data_sources": [
+    "Departement Ruimte en Duurzaamheid, Amsterdam"
+  ],
+  "category": "natural",
+  "subcategory": "trees",
+  "rdf_type": "dbpedia:Elm",
+  "licence": "Not Specified",
+  "webservice_url": "",
+  "update_rate": "0",
+  "fields": [
+    {
+      "description": "id #",
+      "name": "objectnummer",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Type of tree",
+      "lang": "@en",
+      "name": "boomsoort",
+      "type": "rdfs:label",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Scientific name",
+      "name": "wetenschappelijke_naam",
+      "type": "rdfs:label",
+      "lang": "@en",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Date of planting",
+      "lang": "@en",
+      "name": "plantjaar",
+      "type": "xsd:date"
+    },
+    {
+      "description": "Size of trunk",
+      "lang": "@en",
+      "name": "stamdiameter",
+      "type": "xsd:integer",
+      "unit": "cdk:unitCentimeter"
+    },
+    {
+      "description": "Circumference of trunk",
+      "lang": "@en",
+      "name": "stamomtrek",
+      "type": "xsd:integer",
+      "unit": "cdk:unitCentimeter"
+    },
+    {
+      "description": "Unique characteristics",
+      "lang": "@en",
+      "name": "beschermwaarde",
+      "type": "rdfs:label"
+    },
+    {
+      "description": "Remarks",
+      "lang": "@en",
+      "name": "toelichting",
+      "type": "rdfs:label"
+    },
+    {
+      "description": "Reference # city quarter",
+      "lang": "@en",
+      "name": "referentienummer_stadsdeel",
+      "type": "rdfs:label"
+    },
+
+    {
+      "description": "Sequential # ",
+      "lang": "@en",
+      "name": "volgnummer",
+      "type": "rdfs:label"
+    },
+
+    {
+      "description": "Type of monument",
+      "lang": "@en",
+      "name": "groep",
+      "type": "rdfs:label"
+    }
+
+
+
+  ]
+}

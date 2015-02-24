@@ -1,0 +1,11 @@
+{
+  "endpoint": {
+    "url": "http://localhost:9292"
+  },
+  "owner": {
+    "name": "citysdk",
+    "password": "ChangeMeNow"
+  },
+  "db": {
+  }
+}
