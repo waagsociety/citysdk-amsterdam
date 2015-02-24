@@ -31,7 +31,7 @@ $admr_layer = JSON.parse(File.read("#{File.dirname(__FILE__)}/admr_layer.json"),
 
 # Set JSON-LD context
 $admr_layer[:context] = {
-  :"@vocab" => "#{config[:endpoint][:url]}layers/admr/fields/"
+  :"@vocab" => "#{config[:endpoint][:base_uri]}#{config[:endpoint][:endpoint_code]}/layers/admr/fields/"
 }
 
 $api = API.new(config[:endpoint][:url])
