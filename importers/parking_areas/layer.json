@@ -1,0 +1,13 @@
+{
+  "name": "parking.areas",
+  "title": "Parking Areas",
+  "description": "Informatie over parkeergebieden in Amsterdam.",
+  "data_sources": [
+    "Dienst IVV",
+    "http://www.amsterdamopendata.nl/documents/10180/25231/ParkerenShapesWGS84-20140325.zip"
+  ],
+  "category": "mobility",
+  "subcategory": "parking",
+  "rdf_type": "dbpedia:Parking_area",
+  "licence": "Not Specified"
+}

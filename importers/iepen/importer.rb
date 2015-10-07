@@ -58,7 +58,7 @@ params = {
   title: :Soort,
   host: config[:endpoint][:url],
   layer: $layer[:name],
-  name: config[:owner][:name],
+  login: config[:owner][:name],
   password: config[:owner][:password]
 }
 

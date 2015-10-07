@@ -44,8 +44,8 @@ $stderr.puts ("Deleting layer 'parking.garage' and objects, if layer already exi
 begin
   $api.delete('/layers/parking.garage')
 rescue CitySDK::HostException => e
-
 end
+
 $stderr.puts ("Creating layer 'parking.garage'")
 $api.post("/layers", $park_layer)
 
@@ -58,16 +58,14 @@ params = {
   file_path: './data/ParkingLocation.json',
   title: :Name,
   host: config[:endpoint][:url],
-  layer: 'parking.garage',
-  name: config[:owner][:name],
+  layer: $park_layer[:name],
+  login: config[:owner][:name],
   password: config[:owner][:password]
 }
 
 imp = Importer.new(params)
 
 imp.do_import do |object_datum|
-
   puts JSON.pretty_generate(object_datum)
-
 end
 

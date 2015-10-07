@@ -61,7 +61,7 @@ params = {
   layer: 'admr',
   # EPSG:28992, Dutch coordinate system Amersfoort / RD New
   srid: '28992',
-  name: config[:owner][:name],
+  login: config[:owner][:name],
   password: config[:owner][:password]
 }
 
