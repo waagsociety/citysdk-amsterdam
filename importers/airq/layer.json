@@ -1,0 +1,64 @@
+{
+  "name": "test.airq",
+  "title": "AirQ air quality experiment",
+  "description": "Experiment about measuring air quality with No2 sensors",
+  "data_sources": [
+    "Alphasense and Dustuino sensors, assembled by the Waag"
+  ],
+  "category": "environment",
+  "subcategory": "airquality",
+  "rdf_type": "dbpedia:Measurement",
+  "licence": "CC0",
+  "webservice_url": "",
+  "update_rate": "300",
+  "fields": [
+    {
+      "description": "id #",
+      "name": "id",
+      "type": "xsd:unsignedLong",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "The time the measurement was received",
+      "name": "tmstp",
+      "type": "xsd:dateTime",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "The strenght of the WIFI signal",
+      "name": "rssi",
+      "type": "xsd:long",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Temperature",
+      "name": "temp",
+      "type": "xsd:decimal",
+      "unit": "cdk:unitDegreeCelsius"
+    },
+    {
+      "description": "Particulate Matter size 10",
+      "name": "pm10",
+      "type": "xsd:decimal",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Particulate Matter size 2.5",
+      "name": "pm2.5",
+      "type": "xsd:decimal",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "First NO2 measurement",
+      "name": "no2a",
+      "type": "xsd:decimal",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Second NO2 measurement",
+      "name": "no2b",
+      "type": "xsd:decimal",
+      "unit": "cdk:unitNone"
+    },
+  ]
+}
