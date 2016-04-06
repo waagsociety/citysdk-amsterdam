@@ -59,6 +59,6 @@
       "name": "no2b",
       "type": "xsd:decimal",
       "unit": "cdk:unitNone"
-    },
+    }
   ]
 }

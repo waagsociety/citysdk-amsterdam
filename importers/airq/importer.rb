@@ -54,11 +54,11 @@ $api.batch_size = 100
 
 $stderr.puts ("Importing #{$layer[:title]}")
 params = {
-  file_path: './iepen.csv',
+  file_path: './airq.csv',
   title: :Soort,
   host: config[:endpoint][:url],
   layer: $layer[:name],
-  login: config[:owner][:name],
+  name: config[:owner][:name],
   password: config[:owner][:password]
 }
 
