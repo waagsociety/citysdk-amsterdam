@@ -9,7 +9,7 @@
   "subcategory": "airquality",
   "rdf_type": "dbpedia:Measurement",
   "licence": "CC0",
-  "webservice_url": "",
+  "webservice_url": "http://services.citysdk.waag.org/airq",
   "update_rate": "300",
   "fields": [
     {
