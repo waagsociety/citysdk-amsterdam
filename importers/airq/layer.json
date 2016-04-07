@@ -20,7 +20,7 @@
     },
     {
       "description": "The time the measurement was received",
-      "name": "tmstp",
+      "name": "srv_ts",
       "type": "xsd:dateTime",
       "unit": "cdk:unitNone"
     },
@@ -44,7 +44,7 @@
     },
     {
       "description": "Particulate Matter size 2.5",
-      "name": "pm2.5",
+      "name": "pm25",
       "type": "xsd:decimal",
       "unit": "cdk:unitNone"
     },
