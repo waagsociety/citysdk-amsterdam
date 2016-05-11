@@ -1,5 +1,5 @@
 {
-  "name": "test.airq",
+  "name": "airq",
   "title": "AirQ air quality experiment",
   "description": "Experiment about measuring air quality with No2 sensors",
   "data_sources": [
@@ -10,7 +10,7 @@
   "rdf_type": "dbpedia:Measurement",
   "licence": "CC0",
   "webservice_url": "http://services.citysdk.waag.org/airq",
-  "update_rate": "300",
+  "update_rate": "60",
   "fields": [
     {
       "description": "id #",
@@ -57,6 +57,12 @@
     {
       "description": "Second NO2 measurement",
       "name": "no2b",
+      "type": "xsd:decimal",
+      "unit": "cdk:unitNone"
+    },
+    {
+      "description": "Relative Humidity percentage",
+      "name": "humidity",
       "type": "xsd:decimal",
       "unit": "cdk:unitNone"
     }
