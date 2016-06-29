@@ -19,6 +19,12 @@
       "unit": "cdk:unitNone"
     },
     {
+      "description": "name of the sensor",
+      "name": "sensorname",
+      "type": "xsd:string",
+      "unit": "cdk:unitNone"
+    },
+    {
       "description": "The time the measurement was received",
       "name": "srv_ts",
       "type": "xsd:dateTime",
