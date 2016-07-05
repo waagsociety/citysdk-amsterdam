@@ -1,7 +1,7 @@
 {
   "name": "airq",
   "title": "AirQ air quality experiment",
-  "description": "Experiment about measuring air quality with No2 sensors",
+  "description": "Experiment about measuring air quality with No2 and PM sensors",
   "data_sources": [
     "Alphasense and Dustuino sensors, assembled by the Waag"
   ],
@@ -55,14 +55,8 @@
       "unit": "cdk:unitNone"
     },
     {
-      "description": "First NO2 measurement",
+      "description": "Calculated NO2 concentration",
       "name": "no2a",
-      "type": "xsd:decimal",
-      "unit": "cdk:unitNone"
-    },
-    {
-      "description": "Second NO2 measurement",
-      "name": "no2b",
       "type": "xsd:decimal",
       "unit": "cdk:unitNone"
     },
